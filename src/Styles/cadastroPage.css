@@ -1,0 +1,206 @@
+body{
+    font-family: var(--font_family--poppins);
+}
+
+.conatiner__header{
+    width: 100vw;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    border-bottom: solid 1px #0000003b;
+
+    background-color: var(--grey-1);
+}
+
+.title__header{
+    align-self: center;
+    display: flex;
+    gap: 5px;
+
+    margin-left: 27px;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    
+    background-color: aqua;
+
+    border-radius: 100%;
+
+    align-self: center;
+
+    background-color: #4400ff9d;
+}
+
+.drop__down--header{
+    margin-right: 27px;
+
+    align-self: center;
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.div__buttons--header{
+    position:absolute;
+    top: 61px;
+
+    z-index: 1;
+
+    height: 76px;
+    width: 100%;
+    background-color: var(--grey-1);
+
+    display: none;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+
+.button--header{
+    width: 149px;
+    height: 48px;
+
+    margin: 0 auto;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.button--login{
+    background-color: var(--grey-1);
+    
+    border: solid 1px var(--blue-1);
+    
+    color: var(--blue-1);
+}
+
+.button--home{
+    background-color: var(--blue-1);
+
+    border: solid 1px var(--blue-1);
+
+    color: var(--grey-1);
+}
+
+.conatiner__main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.conatiner__main > img{
+    object-fit: cover;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.from__cadastro--main{
+    position: absolute;
+
+    width: 100vw;
+    height: 80%;
+
+    margin-top: 28px;
+
+    background-color: #ffffffee;
+
+}
+
+.container__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.container__form > h2{
+    font-size: 2rem;
+    font-weight: var(--font-weight--bold);
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.input__cadastro{
+    height: 40px;
+
+    padding-left: 19px;
+
+    font-size: 1.2rem;
+
+    color: #838383;
+}
+
+.button{
+    height: 40px;
+
+    font-size: 1.2rem;
+
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.button__cadastrar{
+    background-color: var(--blue-1);
+    color: var(--grey-1);
+
+    border: none;
+
+    margin: 5px 0px;
+}
+
+.button__retornar{
+    background-color: var(--grey-1);
+    color: var(--blue-1);
+
+    border: solid 1px var(--blue-1);
+}
+
+@media(min-width: 700px){
+    .conatiner__header{
+        position: relative;
+        height: 80px;
+    }
+    .drop__down--header{
+        visibility: hidden;
+    }
+    .div__buttons--header{
+        position: absolute;
+        top: 0px;
+        right: 32px;
+
+        width: 350px;
+
+        display: flex;
+    }
+
+    .conatiner__main{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .from__cadastro--main{
+        width: 50%;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/globalStyle.css">
+    <link rel="stylesheet" href="../Styles/admPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="conatiner__header">
+        <div class="title__header">
+            <span class="circle"></span>
+            <h1>Kenzie Empresas</h1> 
+        </div>
+        <!-- <span class="drop__down--header">|||</span> -->
+        <img class="drop__down--header" src="../images/hamburg.png" alt="">
+    </header>
+    <main class="container__main">
+        <section class="container__departament">
+        <div class="top__main">
+            <h2>Departamentos</h2>
+            <img src="../images/Vector (1).png" alt="Aba de selecionar empresas">
+            <span class="frist__li">Selecionar Empresas</span>
+            <ul class="container__list--empresas">
+            </ul>
+            <div class="container__criar">
+                <span class="open__modal--novaEmpresa plus">+</span>
+                <span class="open__modal--novaEmpresa">Criar</span>
+            </div>
+        </div>
+            <ul class="list__departament"></ul>
+        </section>
+        <section class="container__users--cadastrados">
+            <h2>Usuários cadastrados</h2>
+            <ul class="list__users--cadastrados"></ul>
+        </section>
+    </main>
+    <dialog class="container__modal">
+        <h2>Nova Empresa</h2>
+        <span class="close__modal">X</span>
+        <form class="form__conatiner">
+            <label hidden for="name">Seu nome</label>
+            <input id="name" type="text" placeholder="Nome do departamento" required>
+
+            <label hidden for="description">Descrição da empresa</label>
+            <input id="description" type="text" placeholder="Descrição da departamento" required>
+
+            <label hidden for="sector_uuid">Sector</label>
+            <input class="input__uuid" id="company_uuid" type="text" placeholder="sector_uuid" required hidden>
+
+            <button>Cadastrar novo deparatamento</button>
+        </form>
+    </dialog>
+    <dialog class="container__modal-2">
+        <h2>Alterar informações do usuário:</h2>
+        <span class="btn__close--modal">X</span>
+        <form class="form__conatiner">
+            <label hidden for="kind_of_work">Tipo de Trabalho</label>
+            <select class="select select__tipo" name="kind_of_work" id="kind_of_work" required>
+                <option value="">Tipo de Trabalho</option>
+                <option value="home office">home office</option>
+                <option value="presencial">presencial</option>
+                <option value="hibrido">hibrido</option>
+            </select>
+            <label hidden for="nivel"></label>
+            <select class="select select__nivel" name="professional_level" id="nivel" required>
+                <option value="">Nível profissinal</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Sênior</option>
+            </select>
+            <button class="button__atualizar--user" >Atulizar Informações</button>
+        </form>
+    </dialog>
+    <script type="module" src="../Scripts/admpage.js"></script>
+    <dialog class="container__modal-3">
+        <h2>Confimar excluir usuário</h2>
+        <span class="btn__close--modal">X</span>
+        <Span class="btn__delete--yes">Sim</Span>
+        <span class="btn__close--modal">Não</span>
+    </dialog>
+    <dialog class="container__modal-4">
+        <span class="name__modal"></span>
+        <span class="descrição__modal"></span>
+        <span class="empresa__modal"></span>
+
+        <h2>Disponiveis para contrato</h2>
+        <select name="user_sem--dep" class="user_sem--dep" id="">
+            <option value="">Pessoas cadastradas</option>
+        </select>
+
+        <button class="btn_contratar">Contratar</button>
+    </dialog>
+    <dialog class="container__modal-">
+        <form class="container__modal-5" action="">
+
+            <h2>Editar descrição:</h2>
+            <label hidden for="description">Descrição da empresa</label>
+            <input id="description" type="text" placeholder="Nova descrição do departamento" required>
+            <button>Enviar</button>
+        </form>
+    </dialog>
+</body>
+</html> 

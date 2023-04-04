@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/globalStyle.css">
+    <link rel="stylesheet" href="../Styles/cadastroPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="conatiner__header">
+        <div class="title__header">
+            <span class="circle"></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <!-- <span class="drop__down--header">|||</span> -->
+        <img class="drop__down--header" src="../images/hamburg.png" alt="">
+
+    </header>
+    <main class="conatiner__main">
+        <img src="../images/Rectangle 7.png" alt="Pessoas no tabalho">
+        <div class="from__cadastro--main">
+            <form action="" class="container__form">
+                <h2>Cadastre-se</h2>
+                <label hidden for="username">Seu nome</label>
+                <input class="input__cadastro" id="username" type="text" placeholder="Seu nome" required>
+
+                <label hidden for="email">Seu email</label>
+                <input class="input__cadastro" type="text" id="email" placeholder="Seu email" required>
+
+                <label hidden for="password">Sua senha</label>
+                <input class="input__cadastro" type="password" id="password" placeholder="Sua senha" required>
+
+                <label hidden for="nivel">Nível profissional</label>
+                <select class="input__cadastro" name="professional_level" id="nivel">
+                    <option value="">Nível profissinal</option>
+                    <option value="estágio">Estágio</option>
+                    <option value="júnior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="sênior">Sênior</option>
+                </select>
+                <!-- estágio, júnior, pleno, sênior -->
+                <button type="submit" class="button button__cadastrar">Cadastre-se</button>
+                <button type="submit" class="button button__retornar">Retornar</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="../Scripts/cadastro.js"></script>
+</body>
+</html>

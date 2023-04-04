@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/globalStyle.css">
+    <link rel="stylesheet" href="../Styles/userPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="conatiner__header">
+        <div class="title__header">
+            <span class="circle"></span>
+            <h1>Kenzie Empresas</h1> 
+        </div>
+        <!-- <span class="drop__down--header">|||</span> -->
+        <img class="drop__down--header" src="../images/hamburg.png" alt="">
+
+    </header>
+    <main class="contaier__main">
+        <div class="container__top">
+            <h2></h2>
+            <div class="top__main">
+                <p class="user__email">@</p>
+                <p class="user__cargo"></p>
+                <p class="user__type"></p>
+                <img src="../images/Vector.png" alt="Botão para editar perfil">
+            </div>
+        </div>
+        <div class="container__bottom--main">
+            <p class="bottom__main--mesage">Você ainda não foi contratado</p>
+        </div>
+    </main>
+    <dialog class="container__modal">
+        <h2>Editar Perfil</h2>
+        <span class="close__modal">X</span>
+        <form class="form__conatiner">
+            <label hidden for="username">Seu nome</label>
+            <input id="username" type="text" placeholder="Seu nome" required>
+
+            <label hidden for="email">Seu email</label>
+            <input id="email" type="email" placeholder="Seu email" required>
+
+            <label hidden for="password">Sua senha</label>
+            <input id="password" type="password" placeholder="Sua senha" required>
+
+            <button>Editar seu perfil</button>
+        </form>
+    </dialog>
+    <script type="module" src="../Scripts/userPage.js"></script>
+</body>
+</html>

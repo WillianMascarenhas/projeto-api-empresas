@@ -1,0 +1,340 @@
+.conatiner__header{
+    width: 100vw;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+    border-bottom: solid 1px #0000003b;
+
+    background-color: var(--grey-1);
+}
+
+.title__header{ 
+    align-self: center;
+    display: flex;
+    gap: 5px;
+
+    margin-left: 27px;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    
+    background-color: aqua;
+
+    border-radius: 100%;
+
+    align-self: center;
+
+    background-color: #4400ff9d;
+}
+
+.drop__donw--header{
+    margin-right: 27px;
+
+    align-self: center;
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+
+    
+}
+
+.div__buttons--header{
+    position:absolute;
+    top: 61px;
+
+    z-index: 1;
+
+    height: 76px;
+    width: 100%;
+    background-color: var(--grey-1);
+
+    display: none;
+    align-items: center;
+}
+.flex{
+    display: flex;
+
+}
+.button--header{
+    width: 149px;
+    height: 48px;
+
+    background-color: aqua;
+    margin: 0 auto;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.button--login{
+    background-color: var(--grey-1);
+    
+    border: solid 1px var(--blue-1);
+    
+    color: var(--blue-1);
+}
+
+.button--cadastrar{
+    background-color: var(--blue-1);
+
+    border: solid 1px var(--blue-1);
+
+    color: var(--grey-1);
+}
+
+.container__main{
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container__main > img {
+    visibility: hidden;
+
+    width: 100%;
+
+    position: absolute;
+    z-index: 0;
+
+    object-fit: cover;
+}
+
+.select__sector--card{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+
+    width: 90%;
+    height: 52px;
+
+    margin: 0 auto;
+
+    background-color: var(--blue-1);
+
+    margin-top: 23px;
+
+    color: var(--grey-1);
+
+
+}
+
+.sector__main{
+    align-self: center;
+}
+
+.arrow__main{
+    position: absolute;
+    right: 10px;
+
+    align-self: center;
+
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.container__sector{
+    display: none;
+    position: absolute;
+    top: 50px;
+
+    width: 100%;
+    height: 48vh;
+
+    background-color: var(--blue-1);
+
+    padding-bottom: 30px;
+
+}
+.flex2{
+    display: flex;
+}
+
+.container__sector > ul{
+    width: 90%;
+    margin: 0 auto;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 15px;
+}
+
+.sectors{
+    font-size: 1rem;
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+
+    border-bottom: solid 1px var(--grey-1);
+}
+
+.all__sectors--list{
+    align-self: center;
+
+    border: solid 1px var(--grey-1);
+    border-radius: 10px;
+
+    padding: 4px 8px;
+
+    color: var(--blue-1);
+    background-color: var(--grey-1);
+
+    font-weight: var(--font-weight--bold);
+
+    cursor: pointer;
+}
+
+.list__sector--main{
+    display: flex;
+    gap: 20px;
+
+    margin: 30px 27px;
+
+    overflow: scroll;
+
+    width: 100%;
+}
+
+.card__sector--main{
+    width: 241px;
+    height: 211px;
+
+    background-color: var(--grey-1);
+
+    border-bottom: solid 1px var(--blue-1);
+}
+
+.card__sector--main > h2{
+    font-size: 1.25rem;
+
+    padding: 15px 13px;
+
+    width: 241px;
+}
+
+.card__sector--main > p {
+    font-size: 1rem;
+
+    padding-top: 85px;
+    margin-left: 13px;
+}
+
+.card__sector--main > span{
+    font-size: 1rem;
+
+    margin-top: 16px;
+    margin-left: 13px;
+
+    width: 90px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid 1px var(--blue-1);
+    border-radius: 20px;
+
+    color: var(--blue-1);
+}
+
+.setor__conatiner{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 700px){
+    .conatiner__header{
+        position: relative;
+        height: 80px;
+    }
+    .drop__donw--header{
+        visibility: hidden;
+    }
+    .div__buttons--header{
+        position: absolute;
+        top: 0px;
+        right: 32px;
+
+        width: 350px;
+
+        display: flex;
+    }
+
+    .container__main{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        margin-top: 80px;
+    }
+
+    .container__main > img {
+        visibility: visible;
+
+        width: 40%;
+        height: 100vh;
+
+        object-fit: cover;
+
+        position: relative;
+    }
+
+    .left__section--main{
+        background-color: rgb(228, 228, 228);
+
+        width: 45%;
+        height: 100%;
+    }
+
+    .select__sector--card{
+        margin-top: 0px;
+
+        width: 100%;
+    }
+
+    .list__sector--main{
+        flex-direction: column;
+
+        overflow: scroll;
+
+        margin: 0 auto;
+        margin-top: 30px;
+
+        width: 85%;
+        height: 88vh;
+    }
+
+    .card__sector--main{
+        width: 100%;
+        height: 132px;
+    }
+
+    .card__sector--main > p{
+        padding-top: 0px;
+    }
+
+    .card__sector--main > span{
+        margin-bottom: 10px;
+    }
+}
+
+
